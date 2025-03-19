@@ -19,7 +19,7 @@ PLATFORMS ?= linux/${ARCH}
 PLATFORMS := $(if $(filter all,$(PLATFORMS)),$(PLATFORM_LIST),$(PLATFORMS))
 # Set the platforms for building a multi-platform supported image.
 # Example:
-# PLATFORMS ?= linux/amd64,linux/arm64,linux/s390x
+# PLATFORMS ?= linux/amd64,linux/s390x
 # Alternatively, you can export the PLATFORMS variable like this:
 # export PLATFORMS=linux/arm64,linux/s390x,linux/amd64
 # or export PLATFORMS=all to automatically include all supported platforms.
